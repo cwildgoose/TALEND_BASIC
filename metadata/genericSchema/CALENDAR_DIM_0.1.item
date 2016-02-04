@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_bKP30sa6EeWlQLA1IulZDw" dataPackage="_bKP308a6EeWlQLA1IulZDw"/>
+  <TalendMetadata:GenericPackage xmi:id="_bKP308a6EeWlQLA1IulZDw" dataManager="_bKP30sa6EeWlQLA1IulZDw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bKP31Ma6EeWlQLA1IulZDw" id="_bKP30Ma6EeWlQLA1IulZDw" label="CALENDAR_DIM">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP31ca6EeWlQLA1IulZDw" name="X1" label="X1" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP31sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP318a6EeWlQLA1IulZDw" name="DATE_ID" label="DATE_ID" length="10" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bKP32Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP32ca6EeWlQLA1IulZDw" name="DATE_KEY" label="DATE_KEY" length="10" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_bKP32sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP328a6EeWlQLA1IulZDw" name="D1_NO" label="D1_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP33Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP33ca6EeWlQLA1IulZDw" name="D1_VALUE" label="D1_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP33sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP338a6EeWlQLA1IulZDw" name="D2_NO" label="D2_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP34Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP34ca6EeWlQLA1IulZDw" name="D2_VALUE" label="D2_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP34sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP348a6EeWlQLA1IulZDw" name="D3_NO" label="D3_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP35Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP35ca6EeWlQLA1IulZDw" name="D3_VALUE" label="D3_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP35sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP358a6EeWlQLA1IulZDw" name="D4_NO" label="D4_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP36Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP36ca6EeWlQLA1IulZDw" name="D4_VALUE" label="D4_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP36sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP368a6EeWlQLA1IulZDw" name="D5_NO" label="D5_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP37Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP37ca6EeWlQLA1IulZDw" name="D5_VALUE" label="D5_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP37sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP378a6EeWlQLA1IulZDw" name="D6_NO" label="D6_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP38Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP38ca6EeWlQLA1IulZDw" name="D6_VALUE" label="D6_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP38sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP388a6EeWlQLA1IulZDw" name="D7_NO" label="D7_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP39Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP39ca6EeWlQLA1IulZDw" name="D7_VALUE" label="D7_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP39sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP398a6EeWlQLA1IulZDw" name="D8_NO" label="D8_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP3-Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP3-ca6EeWlQLA1IulZDw" name="D8_VALUE" label="D8_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP3-sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP3-8a6EeWlQLA1IulZDw" name="D9_NO" label="D9_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP3_Ma6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP3_ca6EeWlQLA1IulZDw" name="D9_VALUE" label="D9_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP3_sa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP3_8a6EeWlQLA1IulZDw" name="D10_NO" label="D10_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4AMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Aca6EeWlQLA1IulZDw" name="D10_VALUE" label="D10_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Asa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4A8a6EeWlQLA1IulZDw" name="D11_NO" label="D11_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4BMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Bca6EeWlQLA1IulZDw" name="D11_VALUE" label="D11_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Bsa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4B8a6EeWlQLA1IulZDw" name="D12_NO" label="D12_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4CMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Cca6EeWlQLA1IulZDw" name="D12_VALUE" label="D12_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Csa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4C8a6EeWlQLA1IulZDw" name="D13_NO" label="D13_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4DMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Dca6EeWlQLA1IulZDw" name="D13_VALUE" label="D13_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Dsa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4D8a6EeWlQLA1IulZDw" name="D14_NO" label="D14_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4EMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Eca6EeWlQLA1IulZDw" name="D14_VALUE" label="D14_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Esa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4E8a6EeWlQLA1IulZDw" name="D15_NO" label="D15_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4FMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Fca6EeWlQLA1IulZDw" name="D15_VALUE" label="D15_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Fsa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4F8a6EeWlQLA1IulZDw" name="D16_NO" label="D16_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4GMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Gca6EeWlQLA1IulZDw" name="D16_VALUE" label="D16_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Gsa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4G8a6EeWlQLA1IulZDw" name="D17_NO" label="D17_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4HMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Hca6EeWlQLA1IulZDw" name="D17_VALUE" label="D17_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Hsa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4H8a6EeWlQLA1IulZDw" name="D18_NO" label="D18_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4IMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Ica6EeWlQLA1IulZDw" name="D18_VALUE" label="D18_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Isa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4I8a6EeWlQLA1IulZDw" name="D19_NO" label="D19_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4JMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Jca6EeWlQLA1IulZDw" name="D19_VALUE" label="D19_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Jsa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4J8a6EeWlQLA1IulZDw" name="D20_NO" label="D20_NO" length="19" sourceType="INTEGER" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_bKP4KMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Kca6EeWlQLA1IulZDw" name="D20_VALUE" label="D20_VALUE" length="100" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4Ksa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4K8a6EeWlQLA1IulZDw" name="LAST_EDIT_TYPE" label="LAST_EDIT_TYPE" length="1" sourceType="VARCHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_bKP4LMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4Lca6EeWlQLA1IulZDw" name="CREATE_ID" label="CREATE_ID" length="9" precision="3" sourceType="DOUBLE PRECISION" talendType="id_Double" nullable="false">
+        <initialValue xmi:id="_bKP4Lsa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bKP4L8a6EeWlQLA1IulZDw" name="UPDATE_ID" label="UPDATE_ID" length="9" precision="3" sourceType="DOUBLE PRECISION" talendType="id_Double" nullable="false">
+        <initialValue xmi:id="_bKP4MMa6EeWlQLA1IulZDw" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Local">
+    <contextParameter comment="" name="TargetDatabase" prompt="TargetDatabase?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
+    <contextParameter comment="" name="TargetSchema" prompt="TargetSchema?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
+    <contextParameter comment="" name="TargetServer" prompt="TargetServer?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="" name="TargetPassword" prompt="TargetPassword?" promptNeeded="false" type="id_Password" value="7GFFLFTDieQ="/>
+    <contextParameter comment="" name="TargetLogin" prompt="TargetLogin?" promptNeeded="false" type="id_String" value="AIMIA_Newpro_admin"/>
+    <contextParameter comment="" name="TargetPort" prompt="TargetPort?" promptNeeded="false" type="id_String" value="5433"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Linux">
+    <contextParameter comment="" name="TargetDatabase" prompt="TargetDatabase?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
+    <contextParameter comment="" name="TargetSchema" prompt="TargetSchema?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
+    <contextParameter comment="" name="TargetServer" prompt="TargetServer?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="" name="TargetPassword" prompt="TargetPassword?" promptNeeded="false" type="id_Password" value="7GFFLFTDieQ="/>
+    <contextParameter comment="" name="TargetLogin" prompt="TargetLogin?" promptNeeded="false" type="id_String" value="AIMIA_Newpro_admin"/>
+    <contextParameter comment="" name="TargetPort" prompt="TargetPort?" promptNeeded="false" type="id_String" value="5433"/>
+  </talendfile:ContextType>
+</xmi:XMI>

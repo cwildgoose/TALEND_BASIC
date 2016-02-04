@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Development">
+    <contextParameter name="host" prompt="host?" promptNeeded="false" type="id_String" value="206.164.66.234"/>
+    <contextParameter name="database" prompt="database?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
+    <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="AIMIA_Newpro_admin"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="5433"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Local">
+    <contextParameter name="host" prompt="host?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
+    <contextParameter name="database" prompt="database?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
+    <contextParameter comment="" name="username" prompt="username?" promptNeeded="false" type="id_String" value="AIMIA_Newpro_admin"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="5433"/>
+  </talendfile:ContextType>
+</xmi:XMI>
