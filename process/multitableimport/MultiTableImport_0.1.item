@@ -9,6 +9,8 @@
     <contextParameter comment="" name="schema" prompt="schema?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
     <contextParameter name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/data/calendar_dim/calendar_dim.csv"/>
     <contextParameter comment="" name="dataPath" prompt="dataPath?" promptNeeded="false" type="id_String" value="C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/data"/>
+    <contextParameter comment="" name="logExceptions" prompt="logExceptions?" promptNeeded="false" type="id_String" value="C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/logs/exceptions.log"/>
+    <contextParameter comment="" name="logRejections" prompt="logRejections?" promptNeeded="false" type="id_String" value="C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/logs/rejections.log"/>
   </context>
   <context confirmationNeeded="false" name="linux">
     <contextParameter name="tableName" prompt="tableName?" promptNeeded="false" type="id_String" value="calendar_dim"/>
@@ -17,12 +19,14 @@
     <contextParameter name="username" prompt="username?" promptNeeded="false" type="id_String" value="AIMIA_Newpro_admin"/>
     <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" type="id_String" value="5433"/>
     <contextParameter comment="" name="schema" prompt="schema?" promptNeeded="false" type="id_String" value="AIMIA_Newpro"/>
-    <contextParameter name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="/home/talend/data/in/calendar_dim/calendar_dim.csv"/>
-    <contextParameter comment="" name="dataPath" prompt="dataPath?" promptNeeded="false" type="id_String" value="/home/talend/data/in/"/>
+    <contextParameter name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="/opt/talend/data/in/calendar_dim/calendar_dim.csv"/>
+    <contextParameter comment="" name="dataPath" prompt="dataPath?" promptNeeded="false" type="id_String" value="/opt/talend/data/in/"/>
+    <contextParameter comment="" name="logExceptions" prompt="logExceptions?" promptNeeded="false" type="id_String" value="/opt/talend/logs/exceptions.log"/>
+    <contextParameter comment="" name="logRejections" prompt="logRejections?" promptNeeded="false" type="id_String" value="/opt/talend/logs/rejections.log"/>
   </context>
   <parameters>
     <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="32" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="38" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -470,14 +474,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="&quot;C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/logs/exceptions.txt&quot;"/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value="&quot;C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/logs/rejections.txt&quot;"/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -1003,14 +1007,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value=""/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value=""/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -1539,21 +1543,21 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value=""/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value=""/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="100" show="false"/>
-    <elementParameter field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter field="CHECK" name="BATCH_MODE" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)" show="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -2153,21 +2157,21 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value=""/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value=""/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" value="100" show="false"/>
-    <elementParameter field="CHECK" name="BATCH_MODE" value="false"/>
+    <elementParameter field="CHECK" name="BATCH_MODE" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)" show="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -2753,14 +2757,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="&quot;C:/Users/wildgooc/Desktop/mockdata/exceptions&quot;"/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value="&quot;C:/Users/wildgooc/Desktop/mockdata/rejections&quot;"/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -3253,14 +3257,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="&quot;C:/Users/wildgooc/Desktop/mockdata/calendar_dim.csv/exceptions&quot;"/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value="&quot;C:/Users/wildgooc/Desktop/mockdata/calendar_dim.csv/rejections&quot;"/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -3473,14 +3477,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="&quot;C:/Users/wildgooc/Desktop/mockdata/calendar_dim.csv/exceptions&quot;"/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value="&quot;C:/Users/wildgooc/Desktop/mockdata/calendar_dim.csv/rejections&quot;"/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -3732,11 +3736,11 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="&quot;C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/logs/exceptions&quot;"/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value="&quot;C:/TOS_BD-20151029_1337-V6.1.0/workspace/AIMIA_BASIC/logs/rejections&quot;"/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -3876,7 +3880,7 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
-    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
@@ -4237,14 +4241,14 @@
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CHECK" name="USE_CASCADE" value="true" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="COPY"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value=""/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value=""/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logRejections"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="true"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
@@ -4943,11 +4947,11 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="vertica_id" show="false"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="ABORT_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="REJECT_MAX" value=""/>
-    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="&quot;C:/Users/wildgooc/Desktop/mockdata/calendar_dim.csv/exceptions&quot;"/>
+    <elementParameter field="FILE" name="EXCEPTIONS_PATH" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="EXCEPTIONS_NODE" value=""/>
-    <elementParameter field="FILE" name="REJECTED_DATA" value="&quot;C:/Users/wildgooc/Desktop/mockdata/calendar_dim.csv/rejections&quot;"/>
+    <elementParameter field="FILE" name="REJECTED_DATA" value="context.logExceptions"/>
     <elementParameter field="TEXT" name="REJECTED_NODE" value=""/>
     <elementParameter field="CHECK" name="NO_COMMIT" value="false"/>
     <elementParameter field="TEXT" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
